@@ -197,14 +197,13 @@ export default function Portfolio() {
                 <h3 className="font-bold mb-3">Additional Expertise</h3>
                 <div className="flex flex-wrap gap-2">
                   {developer.additonalSkills.map((additonalSkill, index) => (
-                    console.log(additonalSkill.name),
-                    <span 
-                      key={index} 
-                      className="bg-gray-100 dark:bg-gray-700 px-3 py-1 rounded-full text-sm"
-                    >
-                      {additonalSkill.name}
-                    </span>
-                  ))}
+  <span 
+    key={index} 
+    className="bg-gray-100 dark:bg-gray-700 px-3 py-1 rounded-full text-sm"
+  >
+    {additonalSkill.name}
+  </span>
+))}
                 </div>
               </div>
             </div>
@@ -346,9 +345,9 @@ export default function Portfolio() {
                       <span className="mr-2 text-indigo-600 dark:text-indigo-400">
                         <IconGitHub />
                       </span>
-                      <a href={`https://${developer.contact.github}`} className="hover:underline" target="_blank" rel="noopener noreferrer">
-                        {developer.contact.github}
-                      </a>
+                      <a href={`https://${developer.contact.github}`} className="hover:underline" target="_blank" rel="noreferrer">
+  {developer.contact.github}
+</a>
                     </div>
                     <div className="flex items-center">
                       <span className="mr-2 text-indigo-600 dark:text-indigo-400">
