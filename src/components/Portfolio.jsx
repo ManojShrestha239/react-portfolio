@@ -346,7 +346,7 @@ export default function Portfolio() {
                       <span className="mr-2 text-indigo-600 dark:text-indigo-400">
                         <IconGitHub />
                       </span>
-                      <a href={`https://${developer.contact.github}`} className="hover:underline" target="_blank">
+                      <a href={`https://${developer.contact.github}`} className="hover:underline" target="_blank" rel="noopener noreferrer">
                         {developer.contact.github}
                       </a>
                     </div>
