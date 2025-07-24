@@ -353,9 +353,10 @@ export default function Portfolio() {
                       <span className="mr-2 text-indigo-600 dark:text-indigo-400">
                         <IconLinkedin />
                       </span>
-                      <a href={`https://${developer.contact.linkedin}`} className="hover:underline" target="_blank">
-                        {developer.contact.linkedin}
-                      </a>
+                      
+                      <a href={`https://${developer.contact.linkedin}`} className="hover:underline" target="_blank" rel="noreferrer">
+  {developer.contact.linkedin}
+</a>
                     </div>
                   </div>
                 </div>
